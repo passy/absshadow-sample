@@ -45,6 +45,11 @@
             <artifactId>library</artifactId>
             <version>4.0.0-RC1</version>
         </dependency>
+        <dependency>
+            <groupId>com.actionbarsherlock</groupId>
+            <artifactId>plugin-support-lib</artifactId>
+            <version>4.0.0-RC1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -72,6 +77,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
                 <configuration>
                     <source>1.6</source>
                     <target>1.6</target>
@@ -79,6 +85,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
+                <version>2.5</version>
                 <executions>
                     <execution>
                         <phase>initialize</phase>
