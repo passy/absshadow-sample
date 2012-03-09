@@ -49,13 +49,8 @@
         <dependency>
             <groupId>com.actionbarsherlock</groupId>
             <artifactId>library</artifactId>
-            <version>4.0.0-RC1</version>
+            <version>4.0.0</version>
             <type>apklib</type>
-        </dependency>
-        <dependency>
-            <groupId>com.actionbarsherlock</groupId>
-            <artifactId>plugin-support-lib</artifactId>
-            <version>4.0.0-RC1</version>
         </dependency>
     </dependencies>
 
@@ -132,16 +127,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.6</version>
-                <configuration>
-                    <excludes>
-                        <exclude>**/Test*.java</exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
