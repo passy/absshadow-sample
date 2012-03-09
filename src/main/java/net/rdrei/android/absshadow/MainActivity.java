@@ -1,10 +1,10 @@
 package net.rdrei.android.absshadow;
 
-import android.support.v4.app.FragmentActivity;
 import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockActivity;
 import android.os.Bundle;
 
-public class MainActivity extends FragmentActivity
+public class MainActivity extends SherlockActivity
 {
     /** Called when the activity is first created. */
     @Override
