@@ -9,14 +9,14 @@ import com.xtremelabs.robolectric.RobolectricTestRunner;
 
 public class CustomTestRunner extends RobolectricTestRunner {
 
-    public CustomTestRunner(Class<?> testClass) throws InitializationError {
-        super(testClass);
+	public CustomTestRunner(Class<?> testClass) throws InitializationError {
+		super(testClass);
 		addClassOrPackageToInstrument("com.actionbarsherlock.app.SherlockActivity");
-    }
+	}
 
-    @Override
-    protected void bindShadowClasses() {
-        super.bindShadowClasses();
+	@Override
+	protected void bindShadowClasses() {
+		super.bindShadowClasses();
 		Robolectric.bindShadowClass(ShadowSherlockActivity.class);
-    }
+	}
 }
